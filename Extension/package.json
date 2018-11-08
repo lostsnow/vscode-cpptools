@@ -596,6 +596,16 @@
         "command": "C_Cpp.Navigate",
         "key": "Alt+N",
         "when": "editorTextFocus && editorLangId == 'c'"
+      },
+      {
+        "command": "C_Cpp.Navigate",
+        "key": "Alt+N",
+        "when": "editorTextFocus && editorLangId == 'lpc'"
+      },
+      {
+        "command": "C_Cpp.Navigate",
+        "key": "Alt+N",
+        "when": "editorTextFocus && editorLangId == 'pike'"
       }
     ],
     "debuggers": [
@@ -1336,6 +1346,16 @@
           "group": "other@2"
         },
         {
+          "when": "editorLangId == lpc",
+          "command": "C_Cpp.Navigate",
+          "group": "other@2"
+        },
+        {
+          "when": "editorLangId == pike",
+          "command": "C_Cpp.Navigate",
+          "group": "other@2"
+        },
+        {
           "when": "editorLangId == c",
           "command": "workbench.action.gotoSymbol",
           "group": "other@3"
@@ -1372,6 +1392,14 @@
       },
       {
         "language": "c",
+        "path": "./cpp_snippets.json"
+      },
+      {
+        "language": "lpc",
+        "path": "./cpp_snippets.json"
+      },
+      {
+        "language": "pike",
         "path": "./cpp_snippets.json"
       }
     ]
